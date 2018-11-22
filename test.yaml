@@ -1,0 +1,20 @@
+metadata: 
+   name: kubeflow-oss-mnist
+   labels: 
+      "tfjob": kubeflow-oss-mnist
+apiVersion: v1
+kind: PersistentVolume
+spec: 
+   storageClassName: oss
+   flexVolume: 
+      driver: alicloud/oss
+      options: 
+         bucket: test-oss
+         otherOpts: -o allow_other
+         akSecret: "123"
+         akId: "123"
+         url: oss-cn-hangzhou.aliyuncs.com
+   accessModes:
+     - ReadWriteMany
+   capacity: 
+      storage: 1Gi
