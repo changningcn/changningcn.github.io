@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JavaCode",
+            "request": "launch",
+            "mainClass": "JavaCode",
+            "projectName": "changningcn.github.io_e386e7de"
+        }
+    ]
+}
